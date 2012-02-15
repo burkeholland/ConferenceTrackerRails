@@ -1,0 +1,23 @@
+<h1>Listing infos</h1>
+
+<table>
+  <tr>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @infos.each do |info| %>
+  <tr>
+    <td><%= info.content %></td>
+    <td><%= link_to 'Show', info %></td>
+    <td><%= link_to 'Edit', edit_info_path(info) %></td>
+    <td><%= link_to 'Destroy', info, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Info', new_info_path %>

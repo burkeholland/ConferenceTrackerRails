@@ -1,0 +1,25 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.info {
+	background-image: url('comment.png');
+	background-repeat:no-repeat;
+	padding-left: 50px;
+}
+
+.speaker {
+	color: gray;
+	font-size: .8rem;
+}
+
+.time {
+	background-color: black;
+	color: white;
+	float: left;
+	text-align: center;
+	width: 100px;
+	border: 1px solid;
+	border-radius: 10px;
+	margin-right: 10px
+}
