@@ -14,12 +14,20 @@
 }
 
 .time {
+	float: left;
 	background-color: black;
 	color: white;
-	float: left;
 	text-align: center;
 	width: 100px;
 	border: 1px solid;
 	border-radius: 10px;
 	margin-right: 10px
+}
+
+.left {
+	overflow: hidden;
+}
+
+.title {
+	margin-left: 10px;
 }
