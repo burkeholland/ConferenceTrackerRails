@@ -30,7 +30,7 @@
 	
 	var getInfo = function() {
 		// read from the remote data source
-      	$.get("http://ec2-23-21-239-116.compute-1.amazonaws.com/infos.json", function(data) {
+      	$.get("infos.json", function(data) {
 			$.each(data, function() {
 				$("#news").append("<p class='info'>" + this.content + "</p>");
 			});
@@ -41,7 +41,7 @@
 		$("#sessions").kendoMobileListView({
 			dataSource: kendo.data.DataSource.create({ 
 				transport: {
-					read: "http://ec2-23-21-239-116.compute-1.amazonaws.com/sessions.json"
+					read: "sessions.json"
 				},
 				group: "day"
 			}),
