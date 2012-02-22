@@ -43,7 +43,8 @@
 				transport: {
 					read: "sessions.json"
 				},
-				group: "day"
+				group: "day",
+				sort: { field: "time", dir: "asc" }
 			}),
 			template: $("#sessionsTemplate").html()
 		});
