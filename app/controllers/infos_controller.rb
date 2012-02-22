@@ -21,8 +21,6 @@ class InfosController < ApplicationController
     end
   end
 
-=begin
-
   # GET /infos/new
   # GET /infos/new.json
   def new
@@ -83,6 +81,5 @@ class InfosController < ApplicationController
     end
   end
   
-=end
   
 end

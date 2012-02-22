@@ -21,8 +21,6 @@ class SessionsController < ApplicationController
     end
   end
 
-=begin
-
   # GET /sessions/new
   # GET /sessions/new.json
   def new
@@ -82,7 +80,5 @@ class SessionsController < ApplicationController
       format.json { head :no_content }
     end
   end
-
-=end
 
 end
