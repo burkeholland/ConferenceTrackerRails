@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
   # GET /sessions
   # GET /sessions.json
   def index
-    @sessions = Session.all
+    @sessions = Session.all(:order => 'time')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -20,6 +20,8 @@ class SessionsController < ApplicationController
       format.json { render :json => @session }
     end
   end
+
+=begin
 
   # GET /sessions/new
   # GET /sessions/new.json
@@ -80,4 +82,7 @@ class SessionsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+=end
+
 end

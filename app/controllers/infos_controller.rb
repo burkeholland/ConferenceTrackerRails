@@ -21,6 +21,8 @@ class InfosController < ApplicationController
     end
   end
 
+=begin
+
   # GET /infos/new
   # GET /infos/new.json
   def new
@@ -80,4 +82,7 @@ class InfosController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+=end
+  
 end
