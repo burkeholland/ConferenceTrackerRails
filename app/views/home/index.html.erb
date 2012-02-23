@@ -1,11 +1,3 @@
-<div data-role="view" data-init="getInfo" data-layout="app" data-title="info" id="info">
-	   <div id="news"></div>
-</div>
-
-<div data-role="view" data-layout="app" data-init="getSessions" data-title="schedule" id="schedule">
-  <ul id="sessions"></ul>
-</div>
-
 <div data-role="layout" data-id="app">
     <header data-role="header">
         <div data-role="navbar">Conference Tracker</div>
@@ -17,6 +9,15 @@
         </div>
     </footer>
 </div>
+
+<div data-role="view" data-init="getInfo" data-layout="app" data-title="info" id="info">
+	   <div id="news"></div>
+</div>
+
+<div data-role="view" data-layout="app" data-init="getSessions" data-title="schedule" id="schedule">
+  <ul id="sessions"></ul>
+</div>
+
 <script type="text/x-kendo-template" id="sessionsTemplate">
 	<div class="left">
 		<div class='time'>${ formatted_time }</div>
